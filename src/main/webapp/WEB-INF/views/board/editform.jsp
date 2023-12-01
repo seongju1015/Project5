@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<c:set var="edit" items="${edit}" />
+
 <div class="top">
     <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
         <a class="navbar-brand" href="../list">고양이 도감</a>
@@ -28,76 +28,85 @@
 <div class="container-fluid">
     <a class="navbar-brand" href="../list">고양이 리스트</a>
     <a class="navbar-brand" id="view_page" href="../list">Home</a>
+
 </div>
 
 <div class="header">
     <h2> 새로운 고양이 추가 페이지 </h2><br>
 </div>
 
-<form id="sForm" action="editok" method="post" >
-
+<form id="sForm" action="../editok" method="post">
     <div class="gender_page">
         <label>[ 성별 ]</label><br>
         <label>male </label>
-        <input type="radio" name="CatGender" value="male" ${edit.getCatGender().equals("male") ? "checked" : ""}>
+        <input type="radio" name="CatGender" value="male" ${u.getCatGender().equals("male") ? "checked" : ""}>
         <label>female </label>
-        <input type="radio" name="CatGender" value="female" ${edit.getCatGender().equals("female") ? "checked" : ""}><br>
+        <input type="radio" name="CatGender"
+               value="female" ${u.getCatGender().equals("female") ? "checked" : ""}><br>
         <br>
     </div>
 
     <div class="student_number">
         <label>[ 종류 ]</label>
-        <input type="text" name="CatType" value="${edit.getCatType()}">
+        <input type="text" name="CatType" value="${u.getCatType()}">
         <br>
-    </div><br>
-
+    </div>
+    <br>
     <div class="name_page">
         <p>[ 이름 ]</p>
         <label>이름 : </label>
-        <input type="text" name="CatName" placeholder="이름" value="${edit.getCatName()}" >
+        <input type="text" name="CatName" placeholder="이름" value="${u.getCatName()}">
         <br>
-    </div><br>
+    </div>
+    <br>
 
     <div class="semester">
         <label>[ 나이 ] </label>
-        <input type="text" name="CatOld" value="${edit.getCatOld()}" >
+        <input type="text" name="CatOld" value="${u.getCatOld()}">
         <br>
     </div>
     <br>
 
     <div class="student_number">
         <label>[ 색깔 ]</label>
-        <input type="text" name="CatColor" value="${edit.getCatColor()}">
+        <input type="text" name="CatColor" value="${u.getCatColor()}">
         <br>
-    </div><br>
+    </div>
+    <br>
 
     <div class="grade">
+
         <label>[ 성격 ]</label>
-        <input type="text" name="CatPersonality" value="${edit.getCatPersonality()}">
+        <input type="text" name="CatPersonality" value="${u.getCatPersonality()}">
         <br>
     </div>
     <br>
 
     <div className="birthday"><br>
         <label>[ 생년월일 ]</label>
-        <input type ='text' name ='CatBirthday' value="${edit.getCatBirthday()}" >
-    </div><br>
+        <input type='text' name='CatBirthday' value="${u.getCatBirthday()}">
+    </div>
+    <br>
 
     <div class="engineering_certification">
         <label>[ 건강 상태 ]</label><br>
         <label> Excellent </label>
-        <input type="radio" name="CatHealth" value="Excellent" ${edit.getCatHealth().equals("Excellent") ? "checked" : ""}>
+        <input type="radio" name="CatHealth"
+               value="Excellent" ${u.getCatHealth().equals("Excellent") ? "checked" : ""}>
         <label> Good </label>
-        <input type="radio" name="CatHealth" value="Good" ${edit.getCatHealth().equals("Good") ? "checked" : ""}><br>
+        <input type="radio" name="CatHealth" value="Good" ${u.getCatHealth().equals("Good") ? "checked" : ""}><br>
         <label> Bad </label>
-        <input type="radio" name="CatHealth" value="Bad" ${edit.getCatHealth().equals("Bad") ? "checked" : ""}><br>
+        <input type="radio" name="CatHealth" value="Bad" ${u.getCatHealth().equals("Bad") ? "checked" : ""}><br>
         <br>
     </div>
 
-    <div className ="final">
-        <input type = 'submit' value = '추가' >
-        <input type = 'reset'  style="color: red" value = 'reset'><br>
-    </div><br>
+    <input type="hidden" name="CatID" value="${u.getCatID()}">
+
+    <div className="final">
+        <input type='submit' value='수정'>
+        <input type='reset' style="color: red" value='reset'><br>
+    </div>
+    <br>
 
 </form>
 

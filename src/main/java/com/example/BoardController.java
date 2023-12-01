@@ -48,23 +48,22 @@ public class BoardController {
         return "redirect:../board/list";
     }
 
-    @RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/editform/{id}", method = RequestMethod.GET)
     public String editPost(@PathVariable("id") int id, Model model){
         BoardVO boardVO = boardService.getBoard(id);
-        model.addAttribute("edit",boardVO);
+        model.addAttribute("u",boardVO);
         return "board/editform";
     }
 
-    @RequestMapping(value = "{id}/editok", method = RequestMethod.POST)
+    @RequestMapping(value = "/editok", method = RequestMethod.POST)
     public String editPostOk(BoardVO vo){
-
         if(boardService.updateBoard(vo) == 0){
             System.out.println("데이터 수정 실패");
         }
         else{
             System.out.println("데이터 수정 성공!!");
         }
-        return "redirect:../list";
+        return "redirect:../board/list";
     }
 
     @RequestMapping(value = "/desktop/{id}", method=RequestMethod.GET)

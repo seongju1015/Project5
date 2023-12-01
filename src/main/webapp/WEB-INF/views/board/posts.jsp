@@ -30,7 +30,7 @@
 </div>
 
 <div class="container-fluid">
-    <a href="../edit/${posts.getCatID()}">
+    <a href="../editform/${posts.getCatID()}">
         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
     </a>
     <br/>

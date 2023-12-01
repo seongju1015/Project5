@@ -33,6 +33,7 @@ public class BoardDAO {
     }
 
     public int updateBoard(BoardVO vo){
+
         String sql = "update CatInfo set CatName='" + vo.getCatName()+"',"
                 +"CatGender='" + vo.getCatGender()+"',"
                 +"CatType='" + vo.getCatType()+"',"

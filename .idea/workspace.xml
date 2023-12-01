@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e09fa972-809b-4f3f-acce-bfa1afc46490" name="Changes" comment="add 기능 완성">
+    <list default="true" id="e09fa972-809b-4f3f-acce-bfa1afc46490" name="Changes" comment="중간 점검3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/board/dao/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/board/dao/BoardDAO.java" afterDir="false" />
@@ -188,7 +188,7 @@
       <workItem from="1701392629291" duration="5608000" />
       <workItem from="1701401243479" duration="14943000" />
       <workItem from="1701417924322" duration="10552000" />
-      <workItem from="1701429898374" duration="4914000" />
+      <workItem from="1701429898374" duration="10301000" />
     </task>
     <task id="LOCAL-00001" summary="초기세팅 추가">
       <option name="closed" value="true" />
@@ -230,7 +230,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701428118716</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="중간 점검3">
+      <option name="closed" value="true" />
+      <created>1701435352290</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701435352290</updated>
+    </task>
+    <task id="LOCAL-00007" summary="중간 점검3">
+      <option name="closed" value="true" />
+      <created>1701435359291</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701435359291</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +258,7 @@
     <MESSAGE value="중간 저장" />
     <MESSAGE value="posts페이지 완성" />
     <MESSAGE value="add 기능 완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 기능 완성" />
+    <MESSAGE value="중간 점검3" />
+    <option name="LAST_COMMIT_MESSAGE" value="중간 점검3" />
   </component>
 </project>
