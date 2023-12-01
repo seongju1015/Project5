@@ -1,23 +1,29 @@
-package com.example.board.controller;
+package com.example;
 
+import com.example.board.dao.BoardDAO;
 import com.example.board.model.BoardVO;
 import com.example.board.service.BoardService;
+import com.example.board.service.BoardServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.util.List;
+
 @Controller
-@RequestMapping(value="/board")
+@RequestMapping(value = "/board")
 public class BoardController {
     @Autowired
-    BoardService boardService;
+    BoardServiceImpl boardService;
 
-    @RequestMapping(value="/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String boardlist(Model model){
         model.addAttribute("list",boardService.getBoardList());
-        return "list";
+        System.out.println(boardService.getBoardList().get(0).getCatGender());
+        return "board/list";
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)

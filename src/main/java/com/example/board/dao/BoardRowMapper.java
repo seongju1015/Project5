@@ -7,16 +7,19 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 class BoardRowMapper implements RowMapper<BoardVO> {
+
+    @Override
     public BoardVO mapRow(ResultSet rs, int rowNum) throws SQLException {
         BoardVO vo = new BoardVO();
-        vo.setCatID(rs.getInt("seq"));
-        vo.setCatName(rs.getString("Name"));
-        vo.setCatType(rs.getString("Type"));
-        vo.setCatColor(rs.getString("Color"));
-        vo.setCatOld(rs.getInt("Old"));
-        vo.setCatBirthday(rs.getString("Birthday"));
-        vo.setCatPersonality(rs.getString("Personality"));
-        vo.setCatHealth(rs.getString("Health"));
+        vo.setCatID(rs.getInt("CatID"));
+        vo.setCatName(rs.getString("CatName"));
+        vo.setCatType(rs.getString("CatType"));
+        vo.setCatColor(rs.getString("CatColor"));
+        vo.setCatGender(rs.getString("CatGender"));
+        vo.setCatOld(rs.getInt("CatOld"));
+        vo.setCatBirthday(rs.getString("CatBirthday"));
+        vo.setCatPersonality(rs.getString("CatPersonality"));
+        vo.setCatHealth(rs.getString("CatHealth"));
         return vo;
     }
 

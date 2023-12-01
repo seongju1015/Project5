@@ -28,27 +28,27 @@ public class BoardDAO {
     }
 
     public int deleteBoard(int seq){
-        String sql = "delete from CatInfo where seq " +seq;
+        String sql = "delete from CatInfo where CatID =" +seq;
         return jdbcTemplate.update(sql);
     }
 
     public int updateBoard(BoardVO vo){
-        String sql = "update CatInfo set Name=" + vo.getCatName()+","
-                +"Gender=" + vo.getCatGender()+"',"
-                +"Type=" + vo.getCatType()+"',"
-                +"Color=" + vo.getCatColor()+"',"
-                +"Old=" + vo.getCatOld()+"',"
-                +"Birthday=" + vo.getCatBirthday()+"',"
-                +"Personality=" + vo.getCatPersonality()+"',"
-                +"Health=" + vo.getCatHealth();
+        String sql = "update CatInfo set CatName='" + vo.getCatName()+"',"
+                +"CatGender='" + vo.getCatGender()+"',"
+                +"CatType='" + vo.getCatType()+"',"
+                +"CatColor='" + vo.getCatColor()+"',"
+                +"CatOld='" + vo.getCatOld()+"',"
+                +"CatBirthday='" + vo.getCatBirthday()+"',"
+                +"CatPersonality='" + vo.getCatPersonality()+"',"
+                +"CatHealth='" + vo.getCatHealth()+"'where CatID"+vo.getCatID();
         return jdbcTemplate.update(sql);
     }
     public BoardVO getBoard(int seq){
-        String sql ="select * from CatInfo where seq="+seq;
+        String sql ="select * from CatInfo where CatID="+seq;
         return jdbcTemplate.queryForObject(sql,new BoardRowMapper());
     }
     public List<BoardVO> getBoardList(){
-        String sql = "select * from CatInfo order by regdate desc";
+        String sql = "select * from CatInfo order by CatID desc";
         return jdbcTemplate.query(sql,new BoardRowMapper());
     }
 }
