@@ -38,6 +38,7 @@
 <div class="container-fluid">
     <a class="navbar-brand">고양이 리스트</a>
 </div>
+<br/>
 
 <div class="table-responsive">
     <%
@@ -61,13 +62,12 @@
                 <td>${u.getCatOld()}</td>
                 <td>${u.getCatGender()}</td>
                 <td>${u.getCatType()}</td>
-                    <%--    <td><a href="./view.jsp?index=${u.getIndex()}" id="my_a1">${u.title}</a></td>&ndash;%&gt;--%>
-                    <%--    <td><a href="view.jsp"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a></td>--%>
-<%--                <td>--%>
-<%--                    <a href="viid=${u.}">--%>
-<%--                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>--%>
-<%--                    </a>--%>
-<%--                </td>--%>
+                <td>
+                    <a href="posts/${u.getCatID()}">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </a>
+                </td>
+
             </tr>
         </c:forEach>
         </tbody>

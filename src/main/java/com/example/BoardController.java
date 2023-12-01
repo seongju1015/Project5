@@ -22,10 +22,16 @@ public class BoardController {
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String boardlist(Model model){
         model.addAttribute("list",boardService.getBoardList());
-        System.out.println(boardService.getBoardList().get(0).getCatGender());
         return "board/list";
     }
 
+    @RequestMapping(value ="/posts/{id}", method = RequestMethod.GET)
+    public String boardPosts(@PathVariable("id") int id, Model model){
+        BoardVO boardVO = boardService.getBoard(id);
+        model.addAttribute("posts",boardVO);
+        System.out.println(boardVO.getCatOld());
+        return "board/posts";
+    }
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String addPost(){
         return "addpostform";
