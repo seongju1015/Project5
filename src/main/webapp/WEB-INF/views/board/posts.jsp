@@ -79,7 +79,8 @@
             <input type="text" class="form-control" name="StudentResident" value="${posts.getCatHealth()}" disabled>
         </div>
 
-<%--        <a id="delete_button"> <input type="button" name="deletebutton" class="btn btn-danger" value="Delete" onclick="deleteRecord()"></a>--%>
+        <a id="delete_button"> <input type="button" name="deletebutton" class="btn btn-danger" value="Delete" onclick="deleteRecord()"></a>
+
         <hr class="my-4">
     </div>
 
@@ -96,6 +97,14 @@
 
     </footer>
 </div>
+
+<script>
+    function deleteRecord() {
+        // 삭제를 수행하는 코드
+        window.location.href = "../desktop/${posts.getCatID()}";
+    }
+
+</script>
 
 </body>
 </html>

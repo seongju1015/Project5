@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e09fa972-809b-4f3f-acce-bfa1afc46490" name="Changes" comment="중간 점검3">
+    <list default="true" id="e09fa972-809b-4f3f-acce-bfa1afc46490" name="Changes" comment="edit 기능 구현">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/board/dao/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/board/dao/BoardDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/editform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/posts.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +185,7 @@
       <workItem from="1701392629291" duration="5608000" />
       <workItem from="1701401243479" duration="14943000" />
       <workItem from="1701417924322" duration="10552000" />
-      <workItem from="1701429898374" duration="10301000" />
+      <workItem from="1701429898374" duration="11064000" />
     </task>
     <task id="LOCAL-00001" summary="초기세팅 추가">
       <option name="closed" value="true" />
@@ -246,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701435359291</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="edit 기능 구현">
+      <option name="closed" value="true" />
+      <created>1701452951869</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701452951869</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +264,7 @@
     <MESSAGE value="posts페이지 완성" />
     <MESSAGE value="add 기능 완성" />
     <MESSAGE value="중간 점검3" />
-    <option name="LAST_COMMIT_MESSAGE" value="중간 점검3" />
+    <MESSAGE value="edit 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit 기능 구현" />
   </component>
 </project>
