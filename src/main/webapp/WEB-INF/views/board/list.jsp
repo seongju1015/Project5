@@ -29,9 +29,8 @@
 <div class="top">
     <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
         <a class="navbar-brand">고앙이 도감</a>
-        <div id="my_a1">
-            <a class="nav-link" aria-current="page" href="addpostform.jsp">Add</a>
-        </div>
+        <a class="navbar-brand" href="add">Add</a>
+
     </nav>
 </div>
 
@@ -74,8 +73,5 @@
     </table>
 </div>
 
-<div>
-    <p> this is test message</p>
-</div>
 </body>
 </html>

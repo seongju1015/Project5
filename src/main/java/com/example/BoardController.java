@@ -34,7 +34,7 @@ public class BoardController {
     }
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String addPost(){
-        return "addpostform";
+        return "board/addform";
     }
 
     @RequestMapping(value = "/addok", method = RequestMethod.POST)
@@ -45,7 +45,7 @@ public class BoardController {
         else{
             System.out.println("데이터 추가 성공!!!");
         }
-        return "redirect:list";
+        return "redirect:../board/list";
     }
 
     @RequestMapping(value = "/editform/{id}", method = RequestMethod.GET)
