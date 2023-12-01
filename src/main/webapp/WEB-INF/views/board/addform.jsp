@@ -21,13 +21,13 @@
 
 <div class="top">
     <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
-        <a class="navbar-brand" href="../list">고양이 도감</a>
+        <a class="navbar-brand" href="../board/list">고양이 도감</a>
     </nav>
 </div>
 
 <div class="container-fluid">
-    <a class="navbar-brand" href="../list">고양이 리스트</a>
-    <a class="navbar-brand" id="view_page" href="../list">Home</a>
+    <a class="navbar-brand" href="../board/list">고양이 리스트</a>
+    <a class="navbar-brand" id="view_page" href="../board/list">Home</a>
 </div>
 
 <div class="header">
