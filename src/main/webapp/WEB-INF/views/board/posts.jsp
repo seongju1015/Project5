@@ -30,9 +30,12 @@
 </div>
 
 <div class="container-fluid">
-    <a class="navbar-brand" href="index.jsp">고양이 리스트</a>
-<%--    <a class="navbar-brand" id="view_page" onclick="editRecord()">Edit</a>--%>
+    <a href="../edit/${posts.getCatID()}">
+        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+    </a>
+    <br/>
 </div>
+<br/>
 <div class="needs-validation" >
     <div class="row g-3">
 

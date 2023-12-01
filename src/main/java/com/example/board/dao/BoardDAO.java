@@ -40,7 +40,11 @@ public class BoardDAO {
                 +"CatOld='" + vo.getCatOld()+"',"
                 +"CatBirthday='" + vo.getCatBirthday()+"',"
                 +"CatPersonality='" + vo.getCatPersonality()+"',"
-                +"CatHealth='" + vo.getCatHealth()+"'where CatID"+vo.getCatID();
+                +"CatHealth='" + vo.getCatHealth()+"'where CatID="+vo.getCatID();
+
+        System.out.println(vo.getCatName());
+        System.out.println(vo.getCatID());
+
         return jdbcTemplate.update(sql);
     }
     public BoardVO getBoard(int seq){
